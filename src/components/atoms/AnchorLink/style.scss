@@ -4,10 +4,20 @@
 .anchor-link {
     color: $white;
     font-family: $font-family;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
+    transition-duration: 0.5s;
+
+    &:hover {
+        color: $grey;
+    }
 
     &.focused {
         text-decoration: underline;
+
+        &:hover {
+            color: $white;
+        }
     }
 }
