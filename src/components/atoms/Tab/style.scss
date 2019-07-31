@@ -1,0 +1,26 @@
+@import "../../../sass/colors";
+@import "../../../sass/typography";
+
+.tab {
+    background: $white;
+    border: none;
+    cursor: pointer;
+    font-family: $font-family;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px;
+    transition: .2s;
+
+    &:hover {
+        background: $green;
+        color: $white;
+    }
+
+    &:disabled {
+        background: $black_alpha;
+        color: $white;
+        cursor: default;
+        font-weight: normal;
+        transition: none;
+    }
+}

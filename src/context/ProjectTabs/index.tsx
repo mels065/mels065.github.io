@@ -1,15 +1,15 @@
 import * as React from "react";
 
-import { Projects } from "../../enums";
+import { ProjectTypes } from "../../enums";
 
 export const TabsContext = React.createContext({
-    changeSelected: (newSelected: Projects) => undefined,
-    selected: Projects.ALL,
+    changeSelected: (newSelected: ProjectTypes) => undefined,
+    selected: ProjectTypes.ALL,
 });
 
-const [selected, changeSelectedFunc] = React.useState(Projects.ALL);
+const [selected, changeSelectedFunc] = React.useState(ProjectTypes.ALL);
 const state = {
-    changeSelected: (newSelected: Projects) => {
+    changeSelected: (newSelected: ProjectTypes) => {
         changeSelectedFunc(newSelected);
     },
     selected,
@@ -19,5 +19,3 @@ export const TabsProvider = ({ children }: { children: React.ReactElement }) => 
         {children}
     </TabsContext.Provider>
 );
-
-export const TabsConsumer = TabsContext.Consumer;

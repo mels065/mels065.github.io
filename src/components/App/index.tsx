@@ -11,8 +11,11 @@ function test(mode: string) {
 export default function App(): JSX.Element {
   return (
     <div id="App">
-      <Tab onClick={test}>
+      <Tab onClick={test} currentSelection="Hello_World">
         Hello_World
+      </Tab>
+      <Tab onClick={test} currentSelection="Hello_World">
+        Goodbye_World
       </Tab>
     </div>
   );

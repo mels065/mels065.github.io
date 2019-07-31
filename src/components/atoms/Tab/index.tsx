@@ -2,7 +2,7 @@ import * as React from "react";
 
 import "./style.scss";
 
-function clickThunkory(mode: string, onClick: (mode: string) => {}) {
+function clickThunkory(mode: string, onClick: (mode: string) => void) {
     return () => {
         onClick(mode);
     }
@@ -10,14 +10,20 @@ function clickThunkory(mode: string, onClick: (mode: string) => {}) {
 
 interface ITabProps {
     children: string;
-    onClick: (mode: string) => {};
+    onClick: (mode: string) => void;
+    currentSelection: string;
 }
 const Tab = ({
     children,
+    currentSelection,
     onClick,
 
 }: ITabProps) => (
-    <button className="tab" onClick={clickThunkory(children, onClick)}>
+    <button 
+        className="tab"
+        disabled={currentSelection === children}
+        onClick={clickThunkory(children, onClick)}
+    >
         {children}
     </button>
 );
