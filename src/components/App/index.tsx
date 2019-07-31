@@ -1,13 +1,19 @@
 import * as React from "react";
 
-import AnchorLink from "../atoms/AnchorLink";
+import Tab from "../atoms/Tab";
 
 import "./style.scss";
+
+function test(mode: string) {
+  console.log(mode);
+}
 
 export default function App(): JSX.Element {
   return (
     <div id="App">
-      <AnchorLink href="#">Test</AnchorLink>
+      <Tab onClick={test}>
+        Hello_World
+      </Tab>
     </div>
   );
 }
