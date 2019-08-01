@@ -7,7 +7,7 @@ interface IImageProps {
     alt: string;
 }
 const Image = ({ src, alt }: IImageProps) => (
-    <img className="image" src={src} alt={alt} />
+    <img src={src} alt={alt} />
 );
 
 export default Image;

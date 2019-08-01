@@ -10,7 +10,7 @@ const AnchorLink = ({
     href,
     children,
 }: IAnchorLinkProps) => (
-    <a className="anchor-link" href={href}>{children}</a>
+    <a href={href}>{children}</a>
 );
 
 export default AnchorLink;
