@@ -1,0 +1,43 @@
+@import "../../../sass/colors";
+
+.project {
+    background: $blue;
+    border: 2px inset $grey;
+    color: $white;
+    transition: .5s;
+    position: relative;
+    text-align: center;
+    top: 0;
+    width: 80%;
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    .links {
+        background: $dark-blue;
+        display: flex;
+        padding: 5px 0;
+        justify-content: space-evenly;
+
+        a {
+            color: $white;
+            font-size: 1.1rem;
+            transition: .3s;
+
+            &:hover {
+                color: $grey;
+            }
+        }
+    }
+
+    &:hover {
+        top: -10px;
+        box-shadow: 10px 5px 5px $dark-grey;
+    }
+}

@@ -9,7 +9,8 @@
     "skipLibCheck": true
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "./declaration.d.ts"
   ],
   // Also tried including an "exclude" along with it
   // but that didn't work either
