@@ -7,15 +7,18 @@ export const TabsContext = React.createContext({
     selected: ProjectTypes.ALL,
 });
 
-const [selected, changeSelectedFunc] = React.useState(ProjectTypes.ALL);
-const state = {
-    changeSelected: (newSelected: ProjectTypes) => {
-        changeSelectedFunc(newSelected);
-    },
-    selected,
+export function TabsProvider({ children }: { children: React.ReactElement }) {
+    const [selected, changeSelectedFunc] = React.useState(ProjectTypes.ALL);
+    const state = {
+        changeSelected: (newSelected: ProjectTypes) => {
+            changeSelectedFunc(newSelected);
+        },
+        selected,
+    };
+
+    return (
+        <TabsContext.Provider value={state}>
+            {children}
+        </TabsContext.Provider>
+    );
 }
-export const TabsProvider = ({ children }: { children: React.ReactElement }) => (
-    <TabsContext.Provider value={state}>
-        {children}
-    </TabsContext.Provider>
-);
