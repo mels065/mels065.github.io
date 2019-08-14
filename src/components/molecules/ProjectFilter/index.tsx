@@ -8,7 +8,7 @@ import { ProjectTypes } from "../../../enums";
 
 import "./style.scss";
 
-function generateTabs (selected: string, changeSelected: (newSelected: ProjectTypes) => {}) {
+function generateTabs(selected: string, changeSelected: (newSelected: ProjectTypes) => {}) {
     return Object.values(ProjectTypes).map((type) => (
         <Tab
             key={type}

@@ -1,0 +1,17 @@
+@import "../../../sass/colors";
+
+.skill {
+    background: $yellow2;
+    border: 10px solid $dark-blue;
+    border-radius: 20px;
+    height: 150px;
+    line-height: 2rem;
+    text-align: center;
+    width: 150px;
+    
+    label {
+        color: $dark-blue;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
