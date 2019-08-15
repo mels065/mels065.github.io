@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import HeroImage from "../molecules/HeroImage";
+import Logo from "../molecules/Logo";
 
 import "./style.scss";
 
 export default function App(): JSX.Element {
   return (
     <div id="App">
-      <HeroImage />
+      <Logo />
     </div>
   );
 }

@@ -1,0 +1,25 @@
+@import "../../../sass/colors";
+
+.logo {
+    background: $blue;
+    height: 50px;
+    position: relative;
+    width: 50px;
+
+    a {
+        color: $white;
+        font-weight: bold;
+        left: 50%;
+        top: 50%;
+        padding: 15px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
