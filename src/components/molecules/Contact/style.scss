@@ -1,0 +1,12 @@
+@import "../../../sass/colors";
+
+.contact {
+    color: $black;
+    font-size: 3.5rem;
+    transition: .5s;
+
+    &:hover {
+        background: $black;
+        color: $white;
+    }
+}
