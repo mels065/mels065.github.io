@@ -1,0 +1,65 @@
+@import "../../../sass/breakpoints";
+@import "../../../sass/colors";
+
+nav {
+    background: $black;
+    display: flex;
+    justify-content: space-around;
+
+    .left, .right {
+        width: 50%;
+    }
+
+    .right {
+        text-align: right;
+        padding-right: 20px;
+        position: relative;
+
+        .hamburger-btn {
+            cursor: pointer;
+            padding-top: 5px;
+        }
+
+        .menu {
+            opacity: 0;
+            position: absolute;
+            top: -150px;
+            right: 0;
+            padding-right: 20px;
+            transition: .5s;
+            z-index: -1;
+            li {
+                margin: 15px 10px;
+            }
+            &.show {
+                background: $black;
+                display: block;
+                opacity: 1;
+                top: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop_breakpoint) {
+    nav {
+        .right {
+            .hamburger-btn {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+                position: static;
+                opacity: 1;
+                transition: none;
+                &.show {
+                    padding-right: 0;
+                }
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
