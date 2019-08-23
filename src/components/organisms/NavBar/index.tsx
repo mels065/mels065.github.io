@@ -31,7 +31,7 @@ function NavBar() {
         return () => {
             document.removeEventListener("mousedown", pullDownMenuClickHandler);
             window.addEventListener("resize", resizeHandler);
-        }
+        };
     }, [show]);
 
     return (
