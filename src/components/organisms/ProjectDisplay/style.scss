@@ -1,0 +1,21 @@
+@import "../../../sass/colors";
+
+.project-display {
+    margin: 0 auto;
+    width: 80%;
+
+    h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            margin: 20px;
+        }
+    }
+}

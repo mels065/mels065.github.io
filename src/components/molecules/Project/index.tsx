@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import * as path from "path";
+
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTv } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,7 +26,10 @@ const Project = ({
     demoLink,
 }: IProjectProps) => (
     <div className={`project ${paramCase(type)}`}>
-        <img src={image} alt={name} />
+        <img
+            src={image}
+            alt={name}
+        />
         <h3>{name}</h3>
         <div className="links">
             {githubLink ? <a href={githubLink}><FontAwesomeIcon icon={faGithub} /></a> : null}
