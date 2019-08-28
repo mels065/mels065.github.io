@@ -40,20 +40,9 @@
             text-transform: uppercase;
         }
 
-        .btn-panel {
-            a {
-                background: $light_grey;
-                color: $dark_grey;
-                border-radius: 5px;
-                padding: 5px;
-                text-decoration: none;
-                transition: .5s;
-
-                &:hover {
-                    background: $black;
-                    color: $white;
-                }
-            }
+        .contacts {
+            display: flex;
+            justify-content: center;
         }
     }
 }

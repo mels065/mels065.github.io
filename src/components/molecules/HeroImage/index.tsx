@@ -1,5 +1,9 @@
 import * as React from "react";
 
+import Contact from "../Contact";
+
+import contacts from "./contacts";
+
 import "./style.scss";
 
 const specialties = [
@@ -8,7 +12,18 @@ const specialties = [
     "Full-stack",
     "Game Development",
 ]
-let timer;
+
+function renderContacts() {
+    return contacts.map(({ icon, link }, i) => (
+        <li key={i}>
+            <Contact
+                icon={icon}
+                link={link}
+            />
+        </li>
+    ));
+}
+
 function HeroImage() {
     const [currentActive, changeActive] = React.useState(0);
 
@@ -23,9 +38,9 @@ function HeroImage() {
                     <div className="specialty">
                         {specialties[currentActive]}
                     </div>
-                    <div className="btn-panel">
-                        <a href="#Contact">Contact me!</a>
-                    </div>
+                    <ul className="contacts">
+                        {renderContacts()}
+                    </ul>
                 </div>
             </div>
         </div>
