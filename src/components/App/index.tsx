@@ -1,13 +1,13 @@
 import * as React from "react";
 
-import Copyright from "../molecules/Copyright";
+import HeroImage from "../molecules/HeroImage";
 
 import "./style.scss";
 
 export default function App(): JSX.Element {
   return (
     <div id="App">
-      <Copyright />
+      <HeroImage />
     </div>
   );
 }
