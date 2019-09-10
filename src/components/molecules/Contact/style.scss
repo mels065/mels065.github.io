@@ -2,12 +2,11 @@
 
 .contact {
     color: $black;
-    display: block;
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin: 5px;
     transition: .5s;
 
     &:hover {
-        background: $black;
         color: $white;
     }
 }
