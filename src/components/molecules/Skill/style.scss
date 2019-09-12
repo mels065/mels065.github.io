@@ -4,11 +4,14 @@
     background: $white;
     border: 10px solid $dark-blue;
     border-radius: 20px;
-    height: 150px;
+    height: 70vw;
     line-height: 2rem;
-    margin: 10px;
+    margin: 2.5%;
+    max-height: 200px;
+    max-width: 200px;
     text-align: center;
-    width: 150px;
+    width: 70vw;
+    
     
     label {
         color: $dark-blue;

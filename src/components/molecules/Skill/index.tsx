@@ -11,7 +11,7 @@ interface ISkillProps {
 }
 const Skill = ({ name, icon }: ISkillProps) => (
     <div className="skill">
-        <FontAwesomeIcon size="7x" icon={icon} color="#20437c" />
+        <FontAwesomeIcon size="10x" icon={icon} color="#20437c" />
         <label>{name}</label>
     </div>
 );
