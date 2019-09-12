@@ -1,0 +1,23 @@
+@import "../../../sass/colors";
+
+#Container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+footer {
+    align-items: center;
+    background: $black;
+    color: $white;
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-top: auto;
+}

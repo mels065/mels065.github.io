@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import BlogPost from "../molecules/BlogPost";
+import DefaultTemplate from "../templates/DefaultTemplate";
 
 import "./style.scss";
 
@@ -14,12 +14,9 @@ const blogContent = [
 export default function App(): JSX.Element {
   return (
     <div id="App">
-      <BlogPost
-        title="Test"
-        author="Brandon Mellus"
-        date={new Date()}
-        content={blogContent}
-      />
+      <DefaultTemplate>
+        <div>Hello World</div>
+      </DefaultTemplate>
     </div>
   );
 }
